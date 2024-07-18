@@ -52,9 +52,9 @@ export function Home() {
     if(!task) return false
 
     const newText = window.prompt('Editar tarefa...', task.text) 
-    ? (toast.success('success')).toString() 
+    ? (toast.success('Tarefa editada com sucesso!')).toString() 
     : null
-    
+
     if(!newText || newText?.trim() === '') return false
 
      dispatch({

@@ -4,6 +4,7 @@ import { Button } from "../components/utils/Button";
 import { useNavigate } from "react-router-dom";
 import { FormEvent, useContext, useState } from "react";
 import { TodoContext } from "../contexts/TodoContext";
+import { toast } from "sonner";
 
 export function Login() {
 
@@ -15,7 +16,7 @@ export function Login() {
     event.preventDefault()
     if(!username.trim()) {
       setUsername('')
-      return alert('Você precisa digitar algo')
+      return toast.error('Você precisa digitar algo', { position: "top-center" })
     }
 
     setGlobalUsername(username)
