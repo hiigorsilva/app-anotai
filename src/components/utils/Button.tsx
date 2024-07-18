@@ -9,7 +9,7 @@ const buttonVariants = tv({
       primary: 'bg-sky-600 text-zinc-50 shadow-zinc-950/30 shadow-md hover:bg-sky-400 focus:outline focus:outline-sky-800',
       secondary: 'hover:bg-zinc-800 text-zinc-200',
       tertiary: 'bg-zinc-700 hover:bg-red-500',
-    } ,
+    },
 
     size: {
       default: 'w-fit h-12 px-4',

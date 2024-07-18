@@ -1,4 +1,4 @@
-import { Bolt, CalendarCheck2, CircleGauge, Power, User } from "lucide-react";
+import { Bolt, CircleGauge, Notebook, Power, User } from "lucide-react";
 import { Button } from "../utils/Button";
 import { Separator } from "../utils/Separator";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +16,7 @@ export function SidebarActions() {
       <div className="w-full flex flex-1 flex-col justify-between gap-2 space-y-8">
         <div className="w-full flex flex-1 flex-col gap-2">
           <Button variant="secondary" size="full">
-            <CalendarCheck2 className="size-5" />
+            <Notebook className="size-5" />
             Tarefas
           </Button>
           <Button variant="secondary" size="full">
