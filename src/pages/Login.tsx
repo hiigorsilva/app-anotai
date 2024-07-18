@@ -16,7 +16,7 @@ export function Login() {
     event.preventDefault()
     if(!username.trim()) {
       setUsername('')
-      return toast.error('Você precisa digitar algo', { position: "top-center" })
+      return toast.error('Você precisa digitar seu nome', { position: "top-center" })
     }
 
     setGlobalUsername(username)

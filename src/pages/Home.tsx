@@ -18,7 +18,7 @@ export function Home() {
 
   function handleAddTask() {
     if(addTask.trim() === '') {
-      toast.error('Você precisa digitar algo válido.')
+      toast.error('Você precisa digitar uma tarefa.')
       return false
     }
 
@@ -106,7 +106,6 @@ export function Home() {
             {list.length === 0 && <TodoListEmpty />}
           </ul>
         </div>
-
       </main>
     </div>
   )
